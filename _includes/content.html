@@ -115,7 +115,7 @@
 
     {%- endif -%}
 
-    {%- assign excerpt = post[0].content | markdownify | strip_html | truncate: 500 | newline_to_br -%}
+    {%- assign excerpt = post[0].content | markdownify | strip_html | truncate: 100 | newline_to_br -%}
 
     {%- assign link_text = '<span class="tooltip"><a href="' | append: url | append: '">' | append: title | append: '</a><span class="right bottom"><span class="tooltip-title">' | append: title | append: '</span><br/><span class="tooltip-excerpt">' | append: excerpt | append: '</span><i></i></span></span>' -%}
     {%- endif -%}
